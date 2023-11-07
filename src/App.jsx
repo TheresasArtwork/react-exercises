@@ -4,12 +4,14 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { Card } from "./Card/Card";
 import { Hooks } from "./Hooks/Hooks";
+import { InputField } from "./InputField/InputField";
 
 function App() {
   // const [count, setCount] = useState(0);
 
   return (
     <>
+      <InputField />
       <Hooks />
       <Card logo={reactLogo} title={"React"} link={"https://react.dev"} />
       <Card logo={viteLogo} title={"Vite"} link={"https://vitejs.dev"} />
