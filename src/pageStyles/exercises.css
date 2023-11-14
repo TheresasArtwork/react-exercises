@@ -1,0 +1,10 @@
+.exercise-section {
+  background-color: #535bf220;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.exercise-header {
+  margin: 0;
+}
