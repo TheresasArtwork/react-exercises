@@ -1,22 +1,20 @@
-//import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { Card } from "./Card/Card";
-import { Hooks } from "./Hooks/Hooks";
-import { InputField } from "./InputField/InputField";
-import { InputFieldEffect } from "./InputField/InputFieldEffect";
+import Home from "./pages/Home";
+import Exercises from "./pages/Exercises";
+import About from "./pages/About";
+import { AppNavigation } from "./Navigation/Navigation";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <>
-      <InputFieldEffect />
-      <InputField />
-      <Hooks />
-      <Card logo={reactLogo} title={"React"} link={"https://react.dev"} />
-      <Card logo={viteLogo} title={"Vite"} link={"https://vitejs.dev"} />
+      <AppNavigation />
+      <div className="page-container">
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Exercises" element={<Exercises />}></Route>
+          <Route path="/About" element={<About />}></Route>
+        </Routes>
+      </div>
     </>
   );
 }
