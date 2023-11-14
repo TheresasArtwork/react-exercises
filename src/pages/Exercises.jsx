@@ -37,9 +37,17 @@ export default function Exercises() {
           <p>
             Task: Build an Input Field component. The number entered should be
             multiplied by 2 and the result displayed in a paragraph below.
-            UseState is to be used.
+            <strong> UseState</strong> is to be used.
           </p>
           <InputField />
+
+          <p>
+            <br></br>
+            Advanced Task: Create an input field component. The number entered
+            should be multiplied by 5 and the result displayed in a paragraph
+            below. <strong>UseState</strong> and <strong>UseEffect</strong>{" "}
+            should be used.
+          </p>
           <InputFieldEffect />
         </section>
       </div>
