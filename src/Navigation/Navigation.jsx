@@ -10,15 +10,15 @@ export function AppNavigation() {
           Home
         </Link>
         <ul>
-          <CustomLink to="/exercises">Exercises</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
+          <NavigationLink to="/exercises">Exercises</NavigationLink>
+          <NavigationLink to="/about">About</NavigationLink>
         </ul>
       </nav>
     </>
   );
 }
 
-function CustomLink({ to, children, ...props }) {
+function NavigationLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
@@ -31,7 +31,7 @@ function CustomLink({ to, children, ...props }) {
   );
 }
 
-CustomLink.propTypes = {
+NavigationLink.propTypes = {
   to: PropTypes.any,
   children: PropTypes.any,
 };
