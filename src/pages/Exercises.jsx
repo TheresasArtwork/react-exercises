@@ -5,6 +5,7 @@ import { Card } from "../Card/Card";
 import { Hooks } from "../Hooks/Hooks";
 import { InputField } from "../InputField/InputField";
 import { InputFieldEffect } from "../InputField/InputFieldEffect";
+import { Vacation } from "../Vacation/Vacation";
 
 export default function Exercises() {
   return (
@@ -49,6 +50,17 @@ export default function Exercises() {
             should be used.
           </p>
           <InputFieldEffect />
+        </section>
+
+        <section className="exercise-section">
+          <h2 className="exercise-header">Class 4: dream vacation</h2>
+          <p>
+            Task: Create a new component. Two buttons should be defined in this
+            component. When one is selected, an image should appear. If the
+            other is pressed, a different image should appear. If no selection
+            has been made, no image should appear at all.
+          </p>
+          <Vacation />
         </section>
       </div>
     </>
