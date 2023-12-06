@@ -54,7 +54,7 @@ export default function Exercises() {
         </section>
 
         <section className="exercise-section">
-          <h2 className="exercise-header">Class 4: dream vacation</h2>
+          <h2 className="exercise-header">Class 4: Dream Vacation</h2>
           <p>
             Task: Create a new component. Two buttons should be defined in this
             component. When one is selected, an image should appear. If the
@@ -65,10 +65,11 @@ export default function Exercises() {
         </section>
 
         <section className="exercise-section">
-          <h2 className="exercise-header">Class 5: Currency</h2>
+          <h2 className="exercise-header">Class 5: Currency Calculator</h2>
           <p>
             Task: Create a new component. You have two input fields. One
-            displays the current euro value, the other the dollar value.
+            displays the current euro value you enter, the other the calculated
+            dollar value.
           </p>
           <Currency />
         </section>
