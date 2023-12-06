@@ -6,6 +6,7 @@ import { Hooks } from "../Hooks/Hooks";
 import { InputField } from "../InputField/InputField";
 import { InputFieldEffect } from "../InputField/InputFieldEffect";
 import { Vacation } from "../Vacation/Vacation";
+import { Currency } from "../Currency/Currency";
 
 export default function Exercises() {
   return (
@@ -61,6 +62,15 @@ export default function Exercises() {
             has been made, no image should appear at all.
           </p>
           <Vacation />
+        </section>
+
+        <section className="exercise-section">
+          <h2 className="exercise-header">Class 5: Currency</h2>
+          <p>
+            Task: Create a new component. You have two input fields. One
+            displays the current euro value, the other the dollar value.
+          </p>
+          <Currency />
         </section>
       </div>
     </>
