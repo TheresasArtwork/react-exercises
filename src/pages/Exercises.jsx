@@ -7,6 +7,7 @@ import { InputField } from "../InputField/InputField";
 import { InputFieldEffect } from "../InputField/InputFieldEffect";
 import { Vacation } from "../Vacation/Vacation";
 import { Currency } from "../Currency/Currency";
+import { Searchfunction } from "../Searchfunction/Searchfunction";
 
 export default function Exercises() {
   return (
@@ -72,6 +73,16 @@ export default function Exercises() {
             dollar value.
           </p>
           <Currency />
+        </section>
+
+        <section className="exercise-section">
+          <h2 className="exercise-header">Class 6: Search Function</h2>
+          <p>
+            Task: Create a new component. In this component is an Array with all
+            months of a year. Create an input field in which you can search a
+            specific month which will be shown underneath the input field.
+          </p>
+          <Searchfunction />
         </section>
       </div>
     </>
